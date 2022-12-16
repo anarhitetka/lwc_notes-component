@@ -1,0 +1,12 @@
+.main-div-my-styles {
+    height: 500px;
+}
+
+.main-my-styles {
+    padding: 10px;
+}
+
+.main-heading-my-styles, .main-list-my-styles {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

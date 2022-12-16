@@ -1,26 +1,24 @@
 <template>
-    <h1>My Notes</h1>
-    <lightning-accordion onsectiontoggle={handleSectionToggle}
-                        active-section-name={activeSections}>
-        <lightning-accordion-section name="A" label="General notes">
-            <template for:each={generalNotes} for:item="note">
-                <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
-            </template>
-        </lightning-accordion-section>
-
-        <lightning-accordion-section name="B" label="Notes on Accounts">
-            <ul class="slds-has-dividers_around-space">
-
+    <div class="list-my-style">
+        <lightning-accordion onsectiontoggle={handleSectionToggle}
+            active-section-name={activeSections}>
+            <lightning-accordion-section name="A" label="General notes">
+                <template for:each={generalNotes} for:item="note">
+                    <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
+                </template>
+            </lightning-accordion-section>
+            
+            <lightning-accordion-section name="B" label="Notes on Accounts">
                 <template for:each={accNotes} for:item="note">
                     <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
                 </template>
-            </ul>
-        </lightning-accordion-section>
-
-        <lightning-accordion-section name="C" label="Notes on Opportunities">
-            <template for:each={opptyNotes} for:item="note">
-                <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
-            </template>
-        </lightning-accordion-section>
-    </lightning-accordion>
+            </lightning-accordion-section>
+            
+            <lightning-accordion-section name="C" label="Notes on Opportunities">
+                <template for:each={opptyNotes} for:item="note">
+                    <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
+                </template>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </div>
 </template>

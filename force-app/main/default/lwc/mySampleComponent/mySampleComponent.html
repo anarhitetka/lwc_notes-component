@@ -3,27 +3,25 @@
         <lightning-layout multiple-rows="true">
             <!-- HEADER  -->
             <lightning-layout-item padding="around-small" size="12">
-                <!-- <div class="page-section page-header"> -->
                     <c-header></c-header>
-                <!-- </div> -->
             </lightning-layout-item>
             <lightning-layout-item padding="around-small" size="12">
                 <lightning-layout>
                      <!-- LEFT SIDEBAR ACCORDION COMPONENT  -->
-                    <lightning-layout-item padding="around-small" size="3">
+                    <lightning-layout-item size="4">
                         <div class="page-section page-left">
                             <!-- <c-accordion></c-accordion> -->
                             <c-note-list onnoteselected={handleNoteSelected}></c-note-list>
                         </div>
                     </lightning-layout-item>
                     <!-- MAIN MIDDLE SECTION   -->
-                    <lightning-layout-item padding="around-small" size="6">
+                    <lightning-layout-item size="6">
                         <div class="page-section page-main">
                             <c-main-section record-id={selectedNoteId}></c-main-section>
                         </div>
                     </lightning-layout-item>
                     <!-- RIGHT SIDEBAR  -->
-                    <lightning-layout-item padding="around-small" size="3">
+                    <lightning-layout-item size="2">
                         <div class="page-section page-right">
                             <c-right-sidebar></c-right-sidebar>
                         </div>

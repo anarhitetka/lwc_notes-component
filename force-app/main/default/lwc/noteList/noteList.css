@@ -1,0 +1,6 @@
+.list-my-style {
+    --slds-c-accordion-heading-font-size: 16px; 
+    --slds-c-accordion-heading-text-color: purple;
+    height: 500px;
+}
+

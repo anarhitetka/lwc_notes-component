@@ -1,11 +1,19 @@
 <template>
-    <template if:true={recordId}>
-        <h2>Note details: </h2>
-        Name: {name} <br/>
-        Content: {content} <br/>
-        Related to: {type} <br/>
-    </template>
-    <template if:false={recordId}>
-        Select a note to see more details
-    </template>
+    <div class="main-div-my-styles">
+        <template if:true={recordId}>
+            <div class="main-my-styles">
+                <div class="slds-text-heading_small">Note details</div>
+                    <div class="slds-text-longform">
+                        <div class="slds-text-heading_medium main-heading-my-styles">{name}</div>
+                        <ul class="main-list-my-styles">
+                            <li>{content}</li>
+                        </ul>
+                    <p>(Related to: {type})</p>
+                </div>
+            </div>
+        </template>
+        <template if:false={recordId}>
+            Select a note to see more details
+        </template>
+    </div>
 </template>

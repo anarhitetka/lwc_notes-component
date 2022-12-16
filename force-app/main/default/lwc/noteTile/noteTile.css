@@ -1,0 +1,18 @@
+.tile-my-style {
+    padding: 4px;
+    /* margin: 3px; */
+    /* border: 1px solid #e0d8e6; */
+    /* border-radius: 3px; */
+    /* background-color: #e0d8e6; */
+    border-top: 1px solid rgb(212, 210, 210);
+}
+
+.tile-my-style:hover {
+    background-color: #c6bcce;
+}
+
+.link-my-style {
+    text-decoration: none;
+    color: #201d22;
+    font-size: 15px;
+}

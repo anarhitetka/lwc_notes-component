@@ -1,11 +1,7 @@
 <template>
-    <li class="slds-item">
-        <article class="slds-tile slds-tile_board">
-
-            <a onclick={tileClick}>
-                <p>Note title: {mynote.Name}</p>
-            </a>
-            
-        </article>
-    </li>
+    <div class="tile-my-style">
+        <a onclick={tileClick} class="link-my-style">
+            <p>> {mynote.Name}</p>
+        </a>
+    </div>
 </template>

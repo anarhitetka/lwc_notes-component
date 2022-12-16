@@ -13,7 +13,10 @@
 }
 .page-main {
     background: #f8f8f8;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 .page-left,
 .page-right {
     background: #f0efef;
