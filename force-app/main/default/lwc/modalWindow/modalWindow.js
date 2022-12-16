@@ -51,7 +51,6 @@ export default class ModalWindow extends LightningModal {
         if (this.noteName && this.selectedTypeValue) {
             createRecord(objRecordInput).then(res => {
                 this.noteId = res.id;
-                // alert('New note created with id: ' + res.id);
                 LightningAlert.open({
                     message: 'New note created with id: ' + res.id,
                     theme: 'success',
@@ -61,11 +60,9 @@ export default class ModalWindow extends LightningModal {
                 alert('error: ' + JSON.stringify(err));
             });
 
-            // reset all inputs and record id
             this.handleReset();
             this.template.querySelector('lightning-record-edit-form').noteId = null;
 
-            // close modal
             this.close();
 
 
@@ -91,11 +88,5 @@ export default class ModalWindow extends LightningModal {
         this.noteContent = null;
         this.selectedTypeValue = null;
     }
-
-
-    // handleOkay() {
-    //     this.close('okay');
-    // }
-
 
 }

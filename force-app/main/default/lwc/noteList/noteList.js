@@ -47,10 +47,6 @@ export default class NoteList extends LightningElement {
         }
     }
 
-
-
-    ////////////////////////
-
     renderedCallback() {
         // console.log('WIRED NOTES:');
         // console.log(this.wiredNotes);

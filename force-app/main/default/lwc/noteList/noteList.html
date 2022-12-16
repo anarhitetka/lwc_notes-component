@@ -1,37 +1,5 @@
 <template>
     <h1>My Notes</h1>
-    <!-- <p>{activeSectionsMessage}</p> -->
-
-    <!-- <template if:true={noteList}>
-        <lightning-datatable 
-        key-field="id"
-        data={noteList}
-        columns={columns}>
-
-        </lightning-datatable>
-    </template>     -->
-    <!-- <p>GENERAL NOTES:</p>
-    <template for:each={generalNotes} for:item="note">
-        <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
-    </template>
-
-    <p>NOTES FOR ACCOUNTS:</p>
-    <template for:each={accNotes} for:item="note">
-        <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
-    </template>
-
-    <p>NOTES FOR OPPORTUNITIES:</p>
-    <template for:each={opptyNotes} for:item="note">
-        <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
-    </template> -->
-
-    <!-- <template for:each={notesList} for:item="accnote">
-        <p key={accnote.Id}>{accnote.Name}</p>
-    </template> -->
-    <!-- <template for:each={wiredNotes.data} for:item="note">
-        <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
-    </template> -->
-
     <lightning-accordion onsectiontoggle={handleSectionToggle}
                         active-section-name={activeSections}>
         <lightning-accordion-section name="A" label="General notes">

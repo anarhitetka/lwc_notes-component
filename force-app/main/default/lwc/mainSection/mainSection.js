@@ -17,7 +17,7 @@ export default class MainSection extends LightningElement {
     myNote;
 
     renderedCallback() {
-        console.log(this.myNote);
+        //console.log(this.myNote);
     }
 
     get name() {
