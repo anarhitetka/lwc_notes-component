@@ -1,0 +1,35 @@
+<template>
+    <div class="my-additional-styles">
+        
+            <lightning-modal-header label="Create a new note" ></lightning-modal-header>
+            <lightning-modal-body>  
+                <lightning-record-edit-form 
+                    object-api-name="My_Note__c"
+                    
+                >
+
+                    <lightning-messages></lightning-messages>
+                    <div class="slds-m-around_medium">
+
+                        <lightning-input label="Name" name="noteName" onchange={nameChangedHandler} required="true" class="form-input-field" value={noteName} ></lightning-input>      
+                        
+                        <lightning-textarea label="Content" name="noteContent" onchange={contentChangedHandler} class="form-input-field"></lightning-textarea>  
+
+                        <div>
+                            <lightning-combobox name="Type" label="Type" value={selectedTypeValue} placeholder="Select type" options={typeOptions} onchange={typeChangedHandler} required="true" class="form-input-field"></lightning-combobox>
+                        </div>
+                        
+                        <div class="slds-m-top_medium">
+                            <lightning-button 
+                                label="Create new note" 
+                                variant="brand-outline"
+                                onclick={createNote}
+                                ></lightning-button>
+                        </div>
+
+                    </div>
+                </lightning-record-edit-form>
+            </lightning-modal-body>
+
+    </div>
+</template>

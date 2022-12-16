@@ -1,0 +1,52 @@
+<template>
+    <div class="c-container">
+        <lightning-layout multiple-rows="true">
+            <!-- HEADER  -->
+            <lightning-layout-item padding="around-small" size="12">
+                <!-- <div class="page-section page-header"> -->
+                    <c-header></c-header>
+                <!-- </div> -->
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="12">
+                <lightning-layout>
+                     <!-- LEFT SIDEBAR ACCORDION COMPONENT  -->
+                    <lightning-layout-item padding="around-small" size="3">
+                        <div class="page-section page-left">
+                            <!-- <c-accordion></c-accordion> -->
+                            <c-note-list onnoteselected={handleNoteSelected}></c-note-list>
+                        </div>
+                    </lightning-layout-item>
+                    <!-- MAIN MIDDLE SECTION   -->
+                    <lightning-layout-item padding="around-small" size="6">
+                        <div class="page-section page-main">
+                            <c-main-section record-id={selectedNoteId}></c-main-section>
+                        </div>
+                    </lightning-layout-item>
+                    <!-- RIGHT SIDEBAR  -->
+                    <lightning-layout-item padding="around-small" size="3">
+                        <div class="page-section page-right">
+                            <c-right-sidebar></c-right-sidebar>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-layout-item>
+            <!-- FOOTER  -->
+            <lightning-layout-item flexibility="auto" padding="around-small" size="12">
+                    <div class="slds-docked-form-footer stickyFooter bottomfooter">
+                        <c-footer></c-footer>
+                    </div>        
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>
+
+
+
+    
+
+
+
+
+
+
+   

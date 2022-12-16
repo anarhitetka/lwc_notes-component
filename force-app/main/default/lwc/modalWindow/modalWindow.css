@@ -1,0 +1,12 @@
+/* .style-my-modal {
+    border: 1px solid red;
+} */
+.my-additional-styles {
+    --slds-c-modal-header-color-background: #38303d;
+    /* --slds-c-modal-heading-font-weight: 800; */
+    /* --slds-c-modal-heading-font-size: 10rem; */
+    /* --slds-c-modal-header-font-size: 2rem; */
+    --slds-c-modal-header-text-color: white;
+    /* max-width: 50vw; */
+    
+}
