@@ -4,10 +4,8 @@ import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
 import NAME_FIELD from '@salesforce/schema/My_Note__c.Name';
 import CONTENT_FIELD from '@salesforce/schema/My_Note__c.Content__c';
 import TYPE_FIELD from '@salesforce/schema/My_Note__c.Type__c';
-import ACCOUNT_FIELD from '@salesforce/schema/My_Note__c.Account__c';
-import OPPORTUNITY_FIELD from '@salesforce/schema/My_Note__c.Opportunity__c';
 
-const fields = [NAME_FIELD, CONTENT_FIELD, TYPE_FIELD, ACCOUNT_FIELD, OPPORTUNITY_FIELD];
+const fields = [NAME_FIELD, CONTENT_FIELD, TYPE_FIELD];
 
 export default class MainSection extends LightningElement {
     @api recordId;
@@ -32,14 +30,6 @@ export default class MainSection extends LightningElement {
 
     get type() {
         return getFieldValue(this.myNote.data, TYPE_FIELD);
-    }
-
-    get relatedAcc() {
-        return getFieldValue(this.myNote.data, ACCOUNT_FIELD);
-    }
-
-    get relatedOppty() {
-        return getFieldValue(this.myNote.data, OPPORTUNITY_FIELD);
     }
 
 
