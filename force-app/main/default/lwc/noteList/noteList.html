@@ -9,9 +9,12 @@
         </lightning-accordion-section>
 
         <lightning-accordion-section name="B" label="Notes on Accounts">
-            <template for:each={accNotes} for:item="note">
-                <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
-            </template>
+            <ul class="slds-has-dividers_around-space">
+
+                <template for:each={accNotes} for:item="note">
+                    <c-note-tile key={note.Id} mynote={note} ontileclick={handleTileClick}></c-note-tile>
+                </template>
+            </ul>
         </lightning-accordion-section>
 
         <lightning-accordion-section name="C" label="Notes on Opportunities">
