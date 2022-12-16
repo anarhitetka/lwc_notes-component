@@ -57,7 +57,11 @@ export default class ModalWindow extends LightningModal {
                     label: 'New note successfully created'
                 });
             }).catch(err => {
-                alert('error: ' + JSON.stringify(err));
+                LightningAlert.open({
+                    message: 'Error message: ' + JSON.stringify(err.body.message) + JSON.stringify(err.body.output),
+                    theme: 'error',
+                    label: 'Error'
+                });
             });
 
             this.handleReset();
