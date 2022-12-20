@@ -1,5 +1,5 @@
 public with sharing class GetMyNotes {
-
+    
     @AuraEnabled(cacheable=true)
     public static List<My_Note__c> getMyNotesMethod(){
         try {
@@ -8,5 +8,5 @@ public with sharing class GetMyNotes {
             throw new AuraHandledException(e.getMessage());
         }
     }
-
+    
 }
